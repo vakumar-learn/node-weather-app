@@ -12,3 +12,13 @@ eval "$(ssh-agent -s)"      -> for
 add ssh key 
 ssh-add ~/.ssh/id_rsa
 ssh-add -K for mac
+
+
+
+ADD SSH KEY TO HEROKU
+heroku keys:add 
+press Y aftter it fetches the correct rsa pub file
+
+create a heroku app
+heroku create <unique_name>
+heroku create vakumar-node-weather-app

@@ -9,7 +9,7 @@ addressForm.addEventListener('submit', (e) => {
     e.preventDefault();
     fmsg.textContent = "Loading..."
     const address = addressInput.value;
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`weather?address=${address}`)
         .then(response => response.json())
         .then(data => {
             if (data.error) {

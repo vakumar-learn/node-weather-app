@@ -1,0 +1,14 @@
+to check if ssh existts in your computer 
+
+ls -a -l ~/.ssh
+
+to enerate a new ssh
+ssh-keygen -t rsa -b 4096 -C "vakumar.learn@gmail.com"
+
+check
+eval $(ssh-agent -s)      -> for windows
+eval "$(ssh-agent -s)"      -> for 
+
+add ssh key 
+ssh-add ~/.ssh/id_rsa
+ssh-add -K for mac
